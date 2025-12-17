@@ -1,0 +1,76 @@
+.cvPage {
+  min-height: 100vh;
+}
+
+.cvHero {
+  padding: 48px 20px 28px;
+}
+
+.cvContainer {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.cvKicker {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 0 0 10px;
+}
+
+.cvTitle {
+  margin: 0;
+  font-size: clamp(32px, 4.2vw, 52px);
+  line-height: 1.08;
+}
+
+.cvSubtitle {
+  margin: 12px 0 0;
+  max-width: 70ch;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.cvMain {
+  padding: 0 20px 56px;
+}
+
+.cvSection {
+  padding: 18px 0;
+}
+
+.cvSectionTitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.cvSectionBody {
+  margin-top: 10px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.cvState {
+  padding: 18px 0;
+  opacity: 0.75;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cvPage {
+    animation: cvFadeIn 420ms ease-out both;
+  }
+
+  @keyframes cvFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
